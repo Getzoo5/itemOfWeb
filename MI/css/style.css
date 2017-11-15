@@ -1,0 +1,519 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    line-height: 160%;
+}
+
+table, tr, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a:link {
+    color: #666;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #999;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+a:active {
+    color: #666;
+    text-decoration: none;
+}
+
+div {
+    margin: 0 auto;
+}
+
+em, i {
+    font-style: normal;
+    font-size: 100%;
+}
+
+img {
+    border: none;
+}
+
+ul, li, ol {
+    list-style: none;
+}
+
+body {
+    background: #F5F5F5;
+    font-weight: 100;
+}
+
+body, div, ul, li, input, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+img {
+    border: 0 none;
+}
+
+.wtop {
+    width: 100%;
+    overflow: hidden;
+}
+
+.w1 {
+    background: #333;
+}
+
+.wli {
+    width: 1226px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.wli ul li {
+    padding: 0 3px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.wli ul, .wli ul li {
+    float: left;
+    font-size: 12px;
+    color: #AAA;
+}
+
+.wli ul li.a1 {
+    color: #444;
+}
+
+.wli ul li.ts {
+    margin-left: 0px;
+}
+
+.w2 {
+    width: 100%;
+    background: #FFF;
+    overflow: hidden;
+}
+
+/*	.wmune{
+		width:1226px;
+		margin: 0 auto;
+		overflow: auto;
+	}
+	.wmune .wmu ul,.wmune .wmu ul li{
+		float: left;
+		height: 100px;
+		font-size: 14px;
+		line-height: 100px;
+	}
+	.wmune .wmu ul li{
+		padding: 0 10px;
+	}
+	.wmune .wmu ul li.ts{
+		padding: 0;
+		padding-top: 11px;
+	}
+	.wnav,.wmu{
+		width: 1226px;
+		overflow: auto;
+	}
+	.wnav div.wnavm{
+		width: 170px;
+		float:left;
+	}
+	.wnav div ul{
+		background: #2c505f;
+		height: 420px;
+		padding-top: 20px;
+		padding-right: 15px;
+		float: left;
+	}
+	.wnav div ul li{
+		width: 170px;
+		height: 40px;
+		line-height: 40px;
+		margin: 0 0 0 20px;
+		color: #FFF;
+	}
+	.wnav div ul li span{
+		float: right;
+		color: #aaa;
+	}
+	.wnav div.wbanner{
+		width: 1021px;
+		height: 420px;
+		background: #f00;
+		float: left;;
+	}*/
+.abox {
+    width: 100%;
+    background: #FFF;
+    padding-bottom: 50px;
+}
+
+.wtop2 {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+ul, li, dl, dd, dt {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    height: 30px;
+}
+
+ul.a1 {
+    padding: 5px 0;
+    height: auto;
+    overflow: hidden;
+}
+
+ul.a1 li {
+    float: left;
+    padding: 0 10px;
+    height: 76px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 12px;
+}
+
+ul.a1 li.ts {
+    width: 255px;
+    margin: 0;
+    padding: 0px;
+    text-align: left;
+}
+
+.wmune {
+    width: 1226px;
+}
+
+img.logo {
+    height: 55px;
+    margin-bottom: 6px;
+}
+
+img.logos {
+    height: 66px;
+    margin-top: 5px;
+}
+
+/*		.wnav {width: 255px; float: left; background: #2c505f; color: #FFF;}
+		.wnav ul {margin: 20px 0; font-size: 14px;}
+		.wnav ul li {margin: 12px 20px; line-height: 30px; overflow: visible;}
+		.wnav ul li span {float: right;}
+
+		.wnav ul li ul {width: 200px; padding: 20px; background: #000; position: relative; top: -69px; left: 235px; z-index: 999; display: block; visibility: hidden; opacity: 0.5;}
+		.wnav ul li ul:hover {width: 200px; padding: 20px; background: #000; position: relative; top: -69px; left: 235px; z-index: 999; visibility: visible;}
+*/
+/*visibility:hidden;*/
+.wnav {
+    width: 255px;
+    float: left;
+    background: #2c505f;
+    color: #FFF;
+}
+
+.wnav ul {
+    margin: 14px 0;
+    font-size: 14px;
+}
+
+.wnav ul li.wnav_li {
+    padding: 6px 20px;
+    line-height: 30px;
+    overflow: visible;
+}
+
+.wnav ul li.wnav_li div.wnav_li_block {
+    display: block;
+    width: 215px;
+    height: 30px; /* width: 200px; padding: 20px; background: #000; position: relative; top: -69px; left: 235px; z-index: 999; visibility: visible;*/
+}
+
+.wnav ul li.wnav_li div.wnav_li_block a.wnav_li_a {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    position: relative;
+}
+
+.wnav ul li.wnav_li div.wnav_li_block a.wnav_li_a span {
+    float: right;
+}
+
+.wnav ul li.wnav_li div.wnav_li_block div.wnav_li_blockson {
+    display: block;
+    visibility: hidden;
+}
+
+.wnav ul li.wnav_li div.wnav_li_block div.wnav_li_blockson div ul {
+    display: block;
+}
+
+.wnav ul li.wnav_li:hover div.wnav_li_block div.wnav_li_blockson {
+    width: 200px;
+    padding: 20px;
+    background: rgba(255, 255, 2555, .8);
+    position: relative;
+    top: -49px;
+    left: 235px;
+    z-index: 999;
+    display: block;
+    visibility: visible;
+}
+
+.wnav ul li.wnav_li:hover div.wnav_li_block div.wnav_li_blockson a {
+    color: #000;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+}
+
+.wnav ul li.wnav_li:hover div.wnav_li_block div.wnav_li_blockson a:hover {
+    color: #000;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+/*wnav 左侧下拉菜单*/
+
+.wbanner {
+    width: 971px;
+    float: right;
+    height: 448px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+/*wbanner 样式----end*/
+
+.wpro {
+    width: 1226px;
+    margin: 0 auto;
+    margin-top: 10px;
+    overflow: auto;
+}
+
+.wpro dt {
+    width: 255px;
+    background: #5F5750;
+    height: 165px;
+    float: left;
+    color: #fff;
+    text-align: center;
+    line-height: 130px;
+}
+
+.wpro dd {
+    float: left;
+    margin-left: 10px;
+}
+
+.pro_pic {
+    width: 313px;
+}
+
+/*wpro 样式----end*/
+.pro {
+    width: 1226px;
+    height: 653px;
+    margin: 0 auto;
+    padding: 60px 0;
+    color: #333;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.pro-ai {
+    height: 38px;
+}
+
+.pro-ai-l {
+    font: 16px 微软雅黑;
+}
+
+.pro-ai-r {
+    font: 12px 微软雅黑;
+}
+
+.pro-pic {
+    height: 614px;
+    font: 12px 微软雅黑;
+    text-align: center;
+}
+
+.pro-pic-1 {
+    width: 234px;
+    height: 614px;
+}
+
+.pro-pic-2 {
+    width: 234px;
+    height: 300px;
+    position: relative;
+    background: #fff;
+    margin: 0 0 14px 14px;
+}
+
+.free {
+    position: absolute;
+    background: orange;
+    width: 64px;
+    height: 20px;
+    color: #fff;
+    left: 85px;
+    top: 0;
+
+}
+
+.free_red {
+    background: red;
+}
+
+.pro-pic .pro-pic-2:hover {
+    box-shadow: 0px 0px 10px 0px #ccc;
+}
+
+.pro-pic-2 img {
+    margin-top: 40px;
+}
+
+.pro-pic-2 p.one {
+    margin: 10px 0;
+}
+
+.pro-pic-2 p.two {
+    margin-bottom: 18px;
+}
+
+.pro-pic-2 p.three {
+    font-size: 14px;
+    color: orange;
+    font-weight: 700;
+}
+
+.footer {
+    width: 100%;
+    background: #FFF;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.footer dl {
+    width: 1226px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.footer dl dt {
+    float: left;
+}
+
+.footer dl dt ul {
+    width: 150px;
+    float: left;
+}
+
+.footer dl dt ul li {
+    text-align: left;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 100;
+}
+
+.footer dl dt ul li.foot_h {
+    font-size: 14px;
+    font-weight: 700;
+    height: 50px;
+    line-height: 30px;
+}
+
+.footer dl dd {
+    width: 250px;
+    float: right;
+    border-left: 1px #DDD solid;
+    text-align: center;
+}
+
+.footer dl dd h4 {
+    color: #FF831A;
+    line-height: 25px;
+    height: 30px;
+}
+
+.footer dl dd p {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.flink {
+    width: 1226px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.flink dl {
+    overflow: auto;
+}
+
+.flink dl dt {
+    float: left;
+}
+
+.flink dl dd {
+    float: left;
+    padding-top: 3px;
+}
+
+.flink dl dd h6 {
+    color: #666;
+    font-weight: 700px;
+    width: 900px;
+}
+
+.flink dl dd p {
+    color: #CCC;
+    font-size: 10px;
+    width: 900px;
+}
+
+.flink dl dd h6, .flink dl dd p {
+    margin-left: 15px;
+    line-height: 160%;
+}
+
+.flink > p {
+    margin-top: 40px;
+}

@@ -1,0 +1,101 @@
+*{margin:0; padding:0; list-style:none; }
+body{margin-left:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; font-family:"微软雅黑"; font-size: 16px; line-height:160%;}
+h1,h2,h3,h4,h5,h6 {font-weight: normal;}
+table,tr,td{margin:0; padding:0; border:0;}
+a:link{color:#666; text-decoration:none;}
+a:visited{color:#999; text-decoration:none;}
+a:hover{color:#00F; text-decoration:underline;}
+a:active{color:#6CF; text-decoration:none;}
+div{margin:0 auto;}
+em,i{font-style:normal; font-size:100%;}
+img{border:none;}
+ul,li,ol{list-style:none;}
+
+.w {width: 1240px; margin: 0 auto;}
+.left {float: left;}
+.right {float: right;}
+
+.top {background: url(../img/daoh.jpg) no-repeat; color: #fff;}
+.top_in {height: 100px; overflow: hidden;}
+.logo {width: 184px; height: 100px; background: url(../img/index.png) no-repeat left center; float: left;}
+.logo a {width: 184px; height: 100px; display: inline-block;text-indent: -1000px; overflow: hidden;}
+.top_in ul {float: left; margin-left: 150px; padding: 28px 0;}
+.top_in ul li {padding: 12px; float: left;}
+
+.tit {background: #E6E7E9; color: #7A7A7A;}
+.tit p {height: 38px; line-height: 38px; text-indent: 39px;}
+
+.bannner {overflow: hidden;}
+.banner_l {width: 274px; height: 570px; float: left;}
+.banner_l ul li {width: 259px; height: 70px; border-bottom: 1px solid #F4F4F6; color: #66667A; font-size:14px; /*text-indent: 15px;*/ padding-left: 15px;}
+.banner_r {float: left;}
+.banner_r1 {width: 964px; height: 413px; border: 1px solid #F4F4F6; background: url(../img/jst.jpg) no-repeat;}
+.banner_r2 {width: 964px; height: 150px; border: 1px solid #F4F4F6;}
+.b_r2_1,.b_r2_2,.b_r2_3 {width: 321px; height: 150px; float: left;}
+.b_r2_1 {}
+.b_r2_2 {width: 320px; border-right: 1px solid #F4F4F6; border-left: 1px solid #F4F4F6;}
+.b_r2_3 {}
+
+.con_tit {height: 93px; font-size: 18px; line-height: 128px; text-indent: 5px;}
+
+.pro {width: 1238px; border: 1px solid #F4F4F6; border-bottom: 1px solid #F4F4F6; overflow: hidden;}
+.pro_l {width: 925px; height: 932px; float: left;}
+.pro_r {width: 312px; height: 932px; float: left; border-left: 1px solid #F4F4F6;}
+
+.con {margin-bottom: 50px}
+.con ul {width: 1238px; overflow: hidden; border: 1px solid #E9E8E8;}
+.con ul li {width: 308px; height: 318px; float: left; text-align: center; padding-top: 20px}
+.con ul li h3 {text-align: left; font-size: 14px; height: 50px; line-height: 50px; padding-left: 20px}
+.con ul li h3 span {color: #666; line-height: 16px}
+.con ul li.ts {border-right: 1px solid #E9E8E8;}
+
+.footer {background: #F7F6F6;}
+.footer_serve {}
+.footer_serve ul {width: 1240px; overflow: hidden;}
+.footer_serve ul li {height: 160px; width: 248px; float: left;}
+.footer_serve ul li span {height: 33px; width: 33px; display: block; margin: 42px auto 15px auto;}
+.f1 span {background: url(../img/j.png)  no-repeat -9px -56px;}
+.f2 span {background: url(../img/j.png)  no-repeat -55px -56px;}
+.f3 span {background: url(../img/j.png)  no-repeat -100px -56px;}
+.f4 span {background: url(../img/j.png)  no-repeat -143px -56px;}
+.f5 span {background: url(../img/j.png)  no-repeat -182px -56px;}
+.footer_serve ul li.f1:hover span {background: url(../img/j.png)  no-repeat -9px -6px;}
+.footer_serve ul li.f2:hover span {background: url(../img/j.png)  no-repeat -55px -6px;}
+.footer_serve ul li.f3:hover span {background: url(../img/j.png)  no-repeat -100px -6px;}
+.footer_serve ul li.f4:hover span {background: url(../img/j.png)  no-repeat -143px -6px;}
+.footer_serve ul li.f5:hover span {background: url(../img/j.png)  no-repeat -182px -6px;}
+.footer_serve ul li p {text-align: center; font-size: 14px; line-height: 36px; color: #666;}
+
+.footer_nav {width: 1230px;height: 175px; padding: 5px; overflow: hidden; border-bottom: 1px solid #E9E8E8;}
+.footer_nav dl {height: 175px; float: left; width: 68px; padding: 0 45px;}
+.footer_nav dl dt {font-size: 14px; font-weight: 700; line-height: 38px}
+.footer_nav dl dd {font-size: 12px; line-height: 26px}
+.footer_nav .contant {padding-left: 68px; border-left: 1px solid #E9E8E8; font-size: 12px; line-height: 26px; float: right;}
+
+.footer_copyright {padding: 10px 0;}
+.footer_copyright p {text-align: center; font-size: 12px; line-height: 26px; color: #666;}
+.footer_copyright p a {color: #666; text-decoration: none;}
+
+.prow {width: 925px; height: 310px; border-bottom: 1px solid #F4F4F6;}
+.pro_lc {border: none;}
+.p_la_l {width: 617px; height: 310px; border-right: 1px solid #F4F4F6; float: left;}
+.p_la_r {width: 307px; height: 310px; float: left;}
+
+.p_lb_l {width: 308px; height: 310px; border-right: 1px solid #F4F4F6; float: left;}
+.p_lb_m {width: 308px; height: 310px; border-right: 1px solid #F4F4F6; float: left;}
+.p_lb_r {width: 307px; height: 310px; float: left;}
+
+.p_lc_l {width: 308px; height: 310px; border-right: 1px solid #F4F4F6; float: left;}
+.p_lc_m {width: 308px; height: 310px; border-right: 1px solid #F4F4F6; float: left;}
+.p_lc_r {width: 307px; height: 310px; float: left;}
+
+.pro_r div,.pro_r dl {height: 103px; border-top: 1px solid #F4F4F6; overflow: hidden; font-size: 12px}
+.pro_r div {height: 68px; border: none; background: #FAFAFA; text-align: center; font-size: 14px; padding-top: 35px}
+.pro_r div h3 {display: inline-block; font-size: 34px;}
+.pro_r dl dt {width: 120px; height: 103px; float: left;}
+.pro_r dl dd {width: 151px; height: 103px; float: left; padding: 25px 0 25px 40px; position: relative;}
+.pro_r dl dd em {color: #aaa;}
+.pro_r dl dd span {font-size: 16px;}
+
+.pro_r dl dd i {position: absolute; top: 0; left: 10px; display: block; width: 10px; height: 103px; line-height: 103px; font-size: 32px;}
+.pro_r dl dd i.red {color: red;}
