@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <title>京东（JD.COM）-综合网购首选-正品低价、品质保障、配送及时、轻松购物！</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<div class="top">
+    <div class="w">
+        <ul id="depdad">
+            <li>
+                送至：北京
+                <i>
+                    <s>◇</s>
+                </i>
+            </li>
+            <li id="dep"></li>
+        </ul>
+
+
+        <ul>
+            <li><a href="#">你好，请登录</a>　<a href="#">免费注册</a></li>
+            <li class="line">|</li>
+            <li><a href="#">我的订单</a></li>
+            <li class="line">|</li>
+            <li><a href="#">我的京东</a> <i><s>◇</s></i></li>
+            <li class="line">|</li>
+            <li><a href="#">京东会员</a></li>
+            <li class="line">|</li>
+            <li><a href="#">企业采购</a></li>
+            <li class="line">|</li>
+            <li><em></em><a href="#">手机京东</a> <i><s>◇</s></i></li>
+            <li class="line">|</li>
+            <li><a href="#">关注京东</a> <i><s>◇</s></i></li>
+            <li class="line">|</li>
+            <li><a href="#">客户服务</a> <i><s>◇</s></i></li>
+            <li class="line">|</li>
+            <li><a href="#">网站导航</a> <i><s>◇</s></i></li>
+        </ul>
+    </div>
+</div>
+        <script>
+            var depDad = document.getElementById("depdad");
+            var dep = document.getElementById("dep");
+            depDad.onmouseover = function (){
+                dep.className = "dep";
+            }
+            depDad.onmouseout = function (){
+                dep.className = "";
+            }
+
+        </script>
+<!--The top end-->
+<div class="top-ad" id="ad">
+    <div class="w top-ad-in">
+        <img src="images/img/banner.jpg" alt=""><s id="close"></s>
+    </div>
+</div>
+
+<script>
+    var tac = document.getElementById("ad");
+    var hh = document.getElementById("close");
+    hh.onclick = function () {
+        tac.className = "top-ad-close";
+    };
+    hh.onmouseover = function () {
+        this.className = "ad-s";
+    };
+    hh.onmouseout = function () {
+        this.className = "";
+    };
+</script>
+
+<!--The top end-->
+<div class="header w">
+    <div class="logo left"><h1><a href="#">京东商城</a></h1></div>
+    <div class="search left"><input type="text" id="txt" value="笔记本 手机"><button>搜 索</button>
+    </div>
+    <div class="car right"><em></em><a href="#">我的购物车</a><i> > </i><s>0</s></div>
+    <div class="hot left"><a href="#">1元秒杀</a>　<a href="#">低至9.9</a>　<a href="#">米兰家具展</a>　<a href="#">免费抽奖</a>　<a
+            href="#">199减100</a>　<a href="#">微波炉</a>　<a href="#">羽绒服女199减100</a>　<a href="#">饮料</a></div>
+</div>
+<script>
+    //找人
+    var txt = document.getElementById("txt");
+    //文本框获取焦点后 默认文字要清除
+    txt.onfocus = function () {
+        //txt.value = "";//这里 txt 和 this 指的都是文本框
+        this.value = "";
+    };
+    //文本框失去焦点后 默认文字要加上
+    txt.onblur = function () {
+        this.value = "笔记本 手机";
+    };
+</script>
+<!--The header end-->
+
+<div class="nav_line">
+    <div class="nav w">
+
+        <dl class="l-bar left">
+            <dt>全部商品分类</dt>
+            <dd>
+                <ul>
+                    <li><a href="#">家用电器</a> <i> > </i></li>
+                    <li><a href="#">手机、运营商、数码</a> <i> > </i></li>
+                    <li><a href="#">电脑办公</a> <i> > </i></li>
+                    <li><a href="#">家居、家具、家装、厨具</a> <i> > </i></li>
+                    <li><a href="#">男装、女装、童装、内衣</a> <i> > </i></li>
+                    <li><a href="#">个护化妆、清洁用品、宠物</a> <i> > </i></li>
+                    <li><a href="#">鞋靴、箱包、珠宝、奢侈品</a> <i> > </i></li>
+                    <li><a href="#">运动、户外、钟表</a> <i> > </i></li>
+                    <li><a href="#">汽车、汽车用品</a> <i> > </i></li>
+                    <li><a href="#">母婴、玩具乐器</a> <i> > </i></li>
+                    <li><a href="#">食品、酒类、生鲜、特产</a> <i> > </i></li>
+                    <li><a href="#">医药保健</a> <i> > </i></li>
+                    <li><a href="#">图书、音像、电子书</a> <i> > </i></li>
+                    <li><a href="#">彩票、旅行、充值、票务</a> <i> > </i></li>
+                    <li><a href="#">理财、众筹、白条、保险</a> <i> > </i></li>
+                </ul>
+            </dd>
+        </dl>
+
+        <ul class="r-nav left">
+            <li><a href="#">服装城</a></li>
+            <li><a href="#">美妆馆</a></li>
+            <li><a href="#">京东超市</a></li>
+            <li><a href="#">生鲜</a></li>
+            <li><a href="#">全球购</a></li>
+            <li><a href="#">闪购</a></li>
+            <li><a href="#">团购</a></li>
+            <li><a href="#">拍卖</a></li>
+            <li><a href="#">金融</a></li>
+        </ul>
+    </div>
+</div>
+<!--The wnav end-->
+
+<div class="w-ban">
+    <div class="w flow">
+        <div class="ban right flow">
+            <div class="banner left">
+
+                <div class="slider">
+                    <a href="#"><img src="images/banner/01.jpg" alt="" id="slider_img"/></a>
+                    <div class="circle" id="circle">
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <script>
+                    var circle = document.getElementById("circle");
+                    var bigImg = document.getElementById("slider_img");
+                    var lis = circle.getElementsByTagName("a");
+                    for (var i=0 ;i<lis.length;i++){
+                        lis[i].index = i+1;
+                        lis[i].onmouseover = function () {
+                            bigImg.src = "images/banner/0" + this.index + ".jpg";
+                            for (var i=0; i< lis.length;i++){
+                                lis[i].setAttribute("style","background:red");
+                            }
+                        }
+                    }
+                </script>
+
+            </div>
+            <div class="new-box right">
+                <dl>
+                    <dt>
+                    <h2>京东快报</h2><span><a href="#"> 更多 > </a></span></dt>
+                    <dd>
+                        <ul>
+                            <li><b>[特惠]</b> <a href="#">限量领120元全品类礼券！</a></li>
+                            <li><b>[特惠]</b> <a href="#">限量领120元全品类礼券！</a></li>
+                            <li><b>[特惠]</b> <a href="#">限量领120元全品类礼券！</a></li>
+                            <li><b>[特惠]</b> <a href="#">限量领120元全品类礼券！</a></li>
+                            <li><b>[特惠]</b> <a href="#">限量领120元全品类礼券！</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <ul class="life">
+                    <li class="l1">
+                        <div class="pic"></div>
+                        <p>话费</p></li>
+                    <li class="l2">
+                        <div class="pic"></div>
+                        <p>机票</p></li>
+                    <li class="l3">
+                        <div class="pic"></div>
+                        <p>电影票</p></li>
+                    <li class="ts l4">
+                        <div class="pic"></div>
+                        <p>游戏</p></li>
+                    <li class="l5">
+                        <div class="pic"></div>
+                        <p>彩票</p></li>
+                    <li class="l6">
+                        <div class="pic"></div>
+                        <p>加油卡</p></li>
+                    <li class="l7">
+                        <div class="pic"></div>
+                        <p>酒店</p></li>
+                    <li class="ts l8">
+                        <div class="pic"></div>
+                        <p>火车票</p></li>
+                    <li class="l9">
+                        <div class="pic"></div>
+                        <p>众筹</p></li>
+                    <li class="l10">
+                        <div class="pic"></div>
+                        <p>理财</p></li>
+                    <li class="l11">
+                        <div class="pic"></div>
+                        <p>礼品卡</p></li>
+                    <li class="ts l12">
+                        <div class="pic"></div>
+                        <p>白条</p></li>
+                </ul>
+                <div class="new-box_bot"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--The ban end-->
+
+<div class="newpro w">
+    <dl>
+        <dt>
+        <div></div>
+        <p>今日推荐</p></dt>
+        <dd class="ts"><img src="images/newpro1.png" alt=""></dd>
+        <dd><img src="images/newpro2.png" alt=""></dd>
+        <dd><img src="images/newpro3.png" alt=""></dd>
+        <dd><img src="images/newpro4.png" alt=""></dd>
+    </dl>
+</div>
+<!--The newpro end-->
+
+<div class="contit w">
+    <h3>猜你喜欢</h3> <span>换一批</span>
+</div>
+<!--The contit end-->
+
+<div class="likepro w">
+    <ul>
+        <li><img src="images/likepro1.png" alt="">
+            <div><p>Mimosa 皮手套男士冬季保暖加绒羊皮款开车</p><i>¥89.90</i></div>
+        </li>
+        <li><img src="images/likepro2.png" alt="">
+            <div><p>Mimosa 皮手套男士冬季保暖加绒羊皮款开车</p><i>¥89.90</i></div>
+        </li>
+        <li><img src="images/likepro3.png" alt="">
+            <div><p>Mimosa 皮手套男士冬季保暖加绒羊皮款开车</p><i>¥89.90</i></div>
+        </li>
+        <li><img src="images/likepro4.png" alt="">
+            <div><p>Mimosa 皮手套男士冬季保暖加绒羊皮款开车</p><i>¥89.90</i></div>
+        </li>
+        <li><img src="images/likepro5.png" alt="">
+            <div><p>Mimosa 皮手套男士冬季保暖加绒羊皮款开车</p><i>¥89.90</i></div>
+        </li>
+        <li><img src="images/likepro6.png" alt="">
+            <div class="ts"><p>Mimosa 皮手套男士冬季保暖加绒羊皮款开车</p><i>¥89.90</i></div>
+        </li>
+    </ul>
+    <em></em>
+</div>
+<!--The like end-->
+
+<div class="contit w">
+    <h3 class="ts">京东·品质生活</h3>
+</div>
+<!--The contit end-->
+
+<div class="lifepro w">
+    <div class="life_pro1 left">
+        <div class="life_tit"><h4>大牌定制</h4></div>
+        <div class="life_new a1">
+            <div class="hh">
+                <h5>新品首发</h5>
+                <p>新MacBook</p>
+            </div>
+        </div>
+        <div class="life_hot">
+            <div class="life_hot_l left a4">
+                <div class="hhh">
+                    <h5>领券中心</h5>
+                    <p>油卡充值券</p>
+                </div>
+            </div>
+            <div class="life_hot_r right a5">
+                <div class="hhh">
+                    <h5>京东秒杀</h5>
+                    <p>品质精选</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="life_pro2 left">
+        <div class="life_tit"><h4>发现好货</h4></div>
+        <div class="life_new a3">
+            <div class="hhh">
+                <h5>达人推荐</h5>
+                <p>不要高调</p>
+            </div>
+        </div>
+        <div class="life_hot a6">
+            <div class="hhh">
+                <h5>发现好货</h5>
+                <p>轻薄平衡</p>
+            </div>
+        </div>
+    </div>
+    <div class="life_pro1 left">
+        <div class="life_tit"><h4>品牌街</h4></div>
+        <div class="life_new a2">
+            <div class="hh">
+                <h5>品牌特卖</h5>
+                <p>OPPO R9s</p>
+            </div>
+        </div>
+        <div class="life_hot">
+            <div class="life_hot_l left a7">
+                <div class="hhh">
+                    <h5>国际大牌</h5>
+                    <p>CHARLES&KEITH</p>
+                </div>
+            </div>
+            <div class="life_hot_r right a8">
+                <div class="hhh">
+                    <h5>排行榜</h5>
+                    <p>排行榜</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="life_nav right">
+        <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </div>
+</div>
+<!--The lifepro end-->
+
+<div class="ad w">
+    <img src="images/ad1.png" alt="">
+</div>
+<!--The ad end-->
+
+<div class="wear w">
+    <div class="con_tit left">
+        <h3><i>1F</i>服装鞋包</h3>
+    </div>
+    <ul class="con_nav right" id="box">
+        <li class="dap"><a>大牌</a></li>
+        <li><a>男装</a></li>
+        <li><a>女装</a></li>
+        <li><a>鞋靴</a></li>
+        <li><a>箱包</a></li>
+        <li><a>内衣配饰</a></li>
+        <li><a>珠宝首饰</a></li>
+        <li><a>奢品礼品</a></li>
+        <li><a>奢华腕表</a></li>
+    </ul>
+</div>
+
+<div class="con2 w" id="con2">
+    <ul>
+        <li class="currentbox">
+            <div class="lifepro w">
+                <div class="life_pro1 left">
+                    <div class="life_tit"><h4>大牌定制</h4></div>
+                    <div class="life_new a1">
+                        <div class="hh">
+                            <h5>新品首发</h5>
+                            <p>新MacBook</p>
+                        </div>
+                    </div>
+                    <div class="life_hot">
+                        <div class="life_hot_l left a4">
+                            <div class="hhh">
+                                <h5>领券中心</h5>
+                                <p>油卡充值券</p>
+                            </div>
+                        </div>
+                        <div class="life_hot_r right a5">
+                            <div class="hhh">
+                                <h5>京东秒杀</h5>
+                                <p>品质精选</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="life_pro2 left">
+                    <div class="life_tit"><h4>发现好货</h4></div>
+                    <div class="life_new a3">
+                        <div class="hhh">
+                            <h5>达人推荐</h5>
+                            <p>不要高调</p>
+                        </div>
+                    </div>
+                    <div class="life_hot a6">
+                        <div class="hhh">
+                            <h5>发现好货</h5>
+                            <p>轻薄平衡</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="life_pro1 left">
+                    <div class="life_tit"><h4>品牌街</h4></div>
+                    <div class="life_new a2">
+                        <div class="hh">
+                            <h5>品牌特卖</h5>
+                            <p>OPPO R9s</p>
+                        </div>
+                    </div>
+                    <div class="life_hot">
+                        <div class="life_hot_l left a7">
+                            <div class="hhh">
+                                <h5>国际大牌</h5>
+                                <p>CHARLES&KEITH</p>
+                            </div>
+                        </div>
+                        <div class="life_hot_r right a8">
+                            <div class="hhh">
+                                <h5>排行榜</h5>
+                                <p>排行榜</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="life_nav right">
+
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="block">这里有内容</div>
+        </li>
+        <li>
+            <div class="lifepro w">
+                <div class="life_pro1 left">
+                    <div class="life_tit"><h4>大牌定制</h4></div>
+                    <div class="life_new a1">
+                        <div class="hh">
+                            <h5>新品首发</h5>
+                            <p>新MacBook</p>
+                        </div>
+                    </div>
+                    <div class="life_hot">
+                        <div class="life_hot_l left a4">
+                            <div class="hhh">
+                                <h5>领券中心</h5>
+                                <p>油卡充值券</p>
+                            </div>
+                        </div>
+                        <div class="life_hot_r right a5">
+                            <div class="hhh">
+                                <h5>京东秒杀</h5>
+                                <p>品质精选</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="life_pro2 left">
+                    <div class="life_tit"><h4>发现好货</h4></div>
+                    <div class="life_new a3">
+                        <div class="hhh">
+                            <h5>达人推荐</h5>
+                            <p>不要高调</p>
+                        </div>
+                    </div>
+                    <div class="life_hot a6">
+                        <div class="hhh">
+                            <h5>发现好货</h5>
+                            <p>轻薄平衡</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="life_pro1 left">
+                    <div class="life_tit"><h4>品牌街</h4></div>
+                    <div class="life_new a2">
+                        <div class="hh">
+                            <h5>品牌特卖</h5>
+                            <p>OPPO R9s</p>
+                        </div>
+                    </div>
+                    <div class="life_hot">
+                        <div class="life_hot_l left a7">
+                            <div class="hhh">
+                                <h5>国际大牌</h5>
+                                <p>CHARLES&KEITH</p>
+                            </div>
+                        </div>
+                        <div class="life_hot_r right a8">
+                            <div class="hhh">
+                                <h5>排行榜</h5>
+                                <p>排行榜</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="life_nav right">
+
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="block">这里有内容</div>
+        </li>
+        <li>
+            <div class="lifepro w">
+                <div class="life_pro1 left">
+                    <div class="life_tit"><h4>大牌定制</h4></div>
+                    <div class="life_new a1">
+                        <div class="hh">
+                            <h5>新品首发</h5>
+                            <p>新MacBook</p>
+                        </div>
+                    </div>
+                    <div class="life_hot">
+                        <div class="life_hot_l left a4">
+                            <div class="hhh">
+                                <h5>领券中心</h5>
+                                <p>油卡充值券</p>
+                            </div>
+                        </div>
+                        <div class="life_hot_r right a5">
+                            <div class="hhh">
+                                <h5>京东秒杀</h5>
+                                <p>品质精选</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="life_pro2 left">
+                    <div class="life_tit"><h4>发现好货</h4></div>
+                    <div class="life_new a3">
+                        <div class="hhh">
+                            <h5>达人推荐</h5>
+                            <p>不要高调</p>
+                        </div>
+                    </div>
+                    <div class="life_hot a6">
+                        <div class="hhh">
+                            <h5>发现好货</h5>
+                            <p>轻薄平衡</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="life_pro1 left">
+                    <div class="life_tit"><h4>品牌街</h4></div>
+                    <div class="life_new a2">
+                        <div class="hh">
+                            <h5>品牌特卖</h5>
+                            <p>OPPO R9s</p>
+                        </div>
+                    </div>
+                    <div class="life_hot">
+                        <div class="life_hot_l left a7">
+                            <div class="hhh">
+                                <h5>国际大牌</h5>
+                                <p>CHARLES&KEITH</p>
+                            </div>
+                        </div>
+                        <div class="life_hot_r right a8">
+                            <div class="hhh">
+                                <h5>排行榜</h5>
+                                <p>排行榜</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="life_nav right">
+
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="block">这里有内容</div>
+        </li>
+        <li>
+            <div class="lifepro w">
+                <div class="life_pro1 left">
+                    <div class="life_tit"><h4>大牌定制</h4></div>
+                    <div class="life_new a1">
+                        <div class="hh">
+                            <h5>新品首发</h5>
+                            <p>新MacBook</p>
+                        </div>
+                    </div>
+                    <div class="life_hot">
+                        <div class="life_hot_l left a4">
+                            <div class="hhh">
+                                <h5>领券中心</h5>
+                                <p>油卡充值券</p>
+                            </div>
+                        </div>
+                        <div class="life_hot_r right a5">
+                            <div class="hhh">
+                                <h5>京东秒杀</h5>
+                                <p>品质精选</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="life_pro2 left">
+                    <div class="life_tit"><h4>发现好货</h4></div>
+                    <div class="life_new a3">
+                        <div class="hhh">
+                            <h5>达人推荐</h5>
+                            <p>不要高调</p>
+                        </div>
+                    </div>
+                    <div class="life_hot a6">
+                        <div class="hhh">
+                            <h5>发现好货</h5>
+                            <p>轻薄平衡</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="life_pro1 left">
+                    <div class="life_tit"><h4>品牌街</h4></div>
+                    <div class="life_new a2">
+                        <div class="hh">
+                            <h5>品牌特卖</h5>
+                            <p>OPPO R9s</p>
+                        </div>
+                    </div>
+                    <div class="life_hot">
+                        <div class="life_hot_l left a7">
+                            <div class="hhh">
+                                <h5>国际大牌</h5>
+                                <p>CHARLES&KEITH</p>
+                            </div>
+                        </div>
+                        <div class="life_hot_r right a8">
+                            <div class="hhh">
+                                <h5>排行榜</h5>
+                                <p>排行榜</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="life_nav right">
+
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="block">这里有内容</div>
+        </li>
+        <li>
+            <div class="lifepro w">
+                <div class="life_pro1 left">
+                    <div class="life_tit"><h4>大牌定制</h4></div>
+                    <div class="life_new a1">
+                        <div class="hh">
+                            <h5>新品首发</h5>
+                            <p>新MacBook</p>
+                        </div>
+                    </div>
+                    <div class="life_hot">
+                        <div class="life_hot_l left a4">
+                            <div class="hhh">
+                                <h5>领券中心</h5>
+                                <p>油卡充值券</p>
+                            </div>
+                        </div>
+                        <div class="life_hot_r right a5">
+                            <div class="hhh">
+                                <h5>京东秒杀</h5>
+                                <p>品质精选</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="life_pro2 left">
+                    <div class="life_tit"><h4>发现好货</h4></div>
+                    <div class="life_new a3">
+                        <div class="hhh">
+                            <h5>达人推荐</h5>
+                            <p>不要高调</p>
+                        </div>
+                    </div>
+                    <div class="life_hot a6">
+                        <div class="hhh">
+                            <h5>发现好货</h5>
+                            <p>轻薄平衡</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="life_pro1 left">
+                    <div class="life_tit"><h4>品牌街</h4></div>
+                    <div class="life_new a2">
+                        <div class="hh">
+                            <h5>品牌特卖</h5>
+                            <p>OPPO R9s</p>
+                        </div>
+                    </div>
+                    <div class="life_hot">
+                        <div class="life_hot_l left a7">
+                            <div class="hhh">
+                                <h5>国际大牌</h5>
+                                <p>CHARLES&KEITH</p>
+                            </div>
+                        </div>
+                        <div class="life_hot_r right a8">
+                            <div class="hhh">
+                                <h5>排行榜</h5>
+                                <p>排行榜</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="life_nav right">
+
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<script>
+    var box = document.getElementById("box");
+    var spans = box.getElementsByTagName("li");
+    var con = document.getElementById("con2");
+    var lis = con.getElementsByTagName("li");
+    for (var i = 0; i < spans.length; i++) {
+        spans[i].index = i;
+        spans[i].onmouseover = function () {
+            for (var i = 0; i < spans.length; i++) {
+                spans[i].className = "";
+            }
+            this.className = "dap";
+            for (var i = 0; i < lis.length; i++) {
+                lis[i].className = "";
+            }
+            var index = this.index;
+            lis[index].className = "currentbox";
+        }
+    }
+    //        spans.onclick = function () {
+    //            for (var i = 0; i < spans.length; i++) {
+    //                spans[i].className = "";
+    //            }
+    //            spans[i].className = "dap";
+    //        };
+    /* for (var i = 0; i < spans.length; i++) {
+     spans[i].index = i;
+     spans[i].onclick = function () {
+     for (var i = 0; i < spans.length; i++) {
+     spans[i].className = "";
+     }
+     this.className = "dap";
+     for (var i = 0; i < lis.length; i++) {
+     lis[i].className = "";
+     }
+     var index = this.index;
+     lis[index].className = "current";
+     }
+     }*/
+</script>
+<!--The wear end-->
+
+<div class="contit w">
+    <h3>猜你喜欢</h3> <span>换一批</span>
+</div>
+<!--The contit end-->
+
+<div class="likepro w">
+    <ul>
+        <li><img src="images/likepro1.png" alt="">
+            <div><p>Mimosa 皮手套男士冬季保暖加绒羊皮款开车</p><i>¥89.90</i></div>
+        </li>
+        <li><img src="images/likepro2.png" alt="">
+            <div><p>Mimosa 皮手套男士冬季保暖加绒羊皮款开车</p><i>¥89.90</i></div>
+        </li>
+        <li><img src="images/likepro3.png" alt="">
+            <div><p>Mimosa 皮手套男士冬季保暖加绒羊皮款开车</p><i>¥89.90</i></div>
+        </li>
+        <li><img src="images/likepro4.png" alt="">
+            <div><p>Mimosa 皮手套男士冬季保暖加绒羊皮款开车</p><i>¥89.90</i></div>
+        </li>
+        <li><img src="images/likepro5.png" alt="">
+            <div><p>Mimosa 皮手套男士冬季保暖加绒羊皮款开车</p><i>¥89.90</i></div>
+        </li>
+        <li><img src="images/likepro6.png" alt="">
+            <div class="ts"><p>Mimosa 皮手套男士冬季保暖加绒羊皮款开车</p><i>¥89.90</i></div>
+        </li>
+    </ul>
+    <em></em>
+</div>
+<!--The like end-->
+
+<div class="ad_nav b1 w">
+    <ul>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+    </ul>
+</div>
+<!--The ad_nav end-->
+
+
+<div class="contit w">
+    <h3 class="ts">京东·品质生活</h3>
+</div>
+<!--The contit end-->
+
+<div class="lifepro w">
+    <div class="life_pro1 left">
+        <div class="life_tit"><h4>大牌定制</h4></div>
+        <div class="life_new a1">
+            <div class="hh">
+                <h5>新品首发</h5>
+                <p>新MacBook</p>
+            </div>
+        </div>
+        <div class="life_hot">
+            <div class="life_hot_l left a4">
+                <div class="hhh">
+                    <h5>领券中心</h5>
+                    <p>油卡充值券</p>
+                </div>
+            </div>
+            <div class="life_hot_r right a5">
+                <div class="hhh">
+                    <h5>京东秒杀</h5>
+                    <p>品质精选</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="life_pro2 left">
+        <div class="life_tit"><h4>发现好货</h4></div>
+        <div class="life_new a3">
+            <div class="hhh">
+                <h5>达人推荐</h5>
+                <p>不要高调</p>
+            </div>
+        </div>
+        <div class="life_hot a6">
+            <div class="hhh">
+                <h5>发现好货</h5>
+                <p>轻薄平衡</p>
+            </div>
+        </div>
+    </div>
+    <div class="life_pro1 left">
+        <div class="life_tit"><h4>品牌街</h4></div>
+        <div class="life_new a2">
+            <div class="hh">
+                <h5>品牌特卖</h5>
+                <p>OPPO R9s</p>
+            </div>
+        </div>
+        <div class="life_hot">
+            <div class="life_hot_l left a7">
+                <div class="hhh">
+                    <h5>国际大牌</h5>
+                    <p>CHARLES&KEITH</p>
+                </div>
+            </div>
+            <div class="life_hot_r right a8">
+                <div class="hhh">
+                    <h5>排行榜</h5>
+                    <p>排行榜</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="life_nav right">
+        <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </div>
+</div>
+<!--The lifepro end-->
+
+<div class="ad w">
+    <img src="images/ad2.png" alt="">
+</div>
+
+<!--The con end-->
+
+<div class="footer">
+    <div class="f-top">
+        <div class="f-top_in w">
+            <ul>
+                <li><img src="images/slo1.png" alt=""></li>
+                <li><img src="images/slo2.png" alt=""></li>
+                <li><img src="images/slo3.png" alt=""></li>
+                <li><img src="images/slo4.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <div class="foot w flow">
+        <ul>
+            <li>购物指南</li>
+            <li><a href="#">购物流程</a></li>
+            <li><a href="#">会员介绍</a></li>
+            <li><a href="#">生活旅行/团购</a></li>
+            <li><a href="#">常见问题</a></li>
+            <li><a href="#">大家电</a></li>
+            <li><a href="#">联系客服</a></li>
+        </ul>
+        <ul>
+            <li>配送方式</li>
+            <li><a href="#">上门自提</a></li>
+            <li><a href="#">211限时达</a></li>
+            <li><a href="#">配送服务查询</a></li>
+            <li><a href="#">配送费收取标准</a></li>
+            <li><a href="#">海外配送</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">支付方式</a></li>
+            <li><a href="#">货到付款</a></li>
+            <li><a href="#">在线支付</a></li>
+            <li><a href="#">分期付款</a></li>
+            <li><a href="#">邮局汇款</a></li>
+            <li><a href="#">公司转账</a></li>
+        </ul>
+        <ul>
+            <li>售后政策</li>
+            <li><a href="#">价格保护</a></li>
+            <li><a href="#">退款说明</a></li>
+            <li><a href="#">返修/退换货</a></li>
+            <li><a href="#">取消订单</a></li>
+        </ul>
+        <ul>
+            <li>特色服务</li>
+            <li><a href="#">夺宝岛</a></li>
+            <li><a href="#">DIY装机</a></li>
+            <li><a href="#">延保服务</a></li>
+            <li><a href="#">京东E卡</a></li>
+            <li><a href="#">京东通信</a></li>
+        </ul>
+        <dl>
+            <dt>京东自营覆盖区县</dt>
+            <dd>京东已向全国2654个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。<br/>
+                <a href="#">查看详情 ></a></dd>
+        </dl>
+    </div>
+    <div class="bot-nav w">
+        <p>
+            <a href="#">关于我们</a> | <a href="#">联系我们</a> | <a href="#">联系客服</a> | <a href="#">商家入驻</a> | <a
+                href="#">营销中心</a> | <a href="#">手机京东</a> | <a href="#">友情链接</a> | <a href="#">销售联盟</a> | <a href="#">京东社区</a>
+            |
+            <a href="#">销售联盟</a> | <a href="#">风险监测</a> | <a href="#">京东公益</a> | <a href="#">English</a> | <a href="#">Site</a>
+            |
+            <a href="#">Contact Us</a>
+        </p>
+        <div class="copyr w">
+            <img src="images/j.png" alt=""> 京公网安备 11000002000088号 | 京ICP证070359号 | 互联网药品信息服务资格证编号(京)-经营性-2014-0008 |
+            新出发京零 字第大120007号<br/>
+            互联网出版许可证编号新出网证(京)字150号 | 出版物经营许可证 | 网络文化经营许可证京网文[2014]2148-348号 | 违法和不良信息举报电话：4006561155<br/>
+            Copyright © 2004 - 2016 京东JD.com 版权所有 | 消费者维权热线：4006067733<br/>
+            京东旗下网站：京东钱包<br/>
+            <img src="images/jy.png" alt=""> &nbsp; &nbsp; &nbsp;<img src="images/jy.png" alt=""> &nbsp; &nbsp;
+            &nbsp;<img src="images/jy.png" alt=""> &nbsp; &nbsp; &nbsp;<img src="images/jy.png" alt=""> &nbsp; &nbsp;
+            &nbsp;<img src="images/jy.png" alt=""> &nbsp; &nbsp; &nbsp;<img src="images/jy.png" alt="">
+        </div>
+    </div>
+</div>
+</body>
+</html>
