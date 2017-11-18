@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>传智播客·黑马程序员</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div class="top">
+    <div class="top_in w">
+        <div class="top_in_l left">传智播客旗下品牌： <a href="#">黑马程序员</a> | <a href="#">博学谷</a></div>
+        <div class="top_in_r right">改变中国IT教育，我们正在行动 全国咨询热线：400-618-4000</div>
+    </div>
+</div>
+<div class="nav w flow">
+    <div class="logo left"><h1><a href="#"></a>传智播客</h1></div>
+    <ul>
+        <li><a href="#">免费学习资源<span></span></a></li>
+        <li><a href="#">课程中心</a></li>
+        <li><a href="#">学科指南</a></li>
+        <li><a href="#">学员故事</a></li>
+        <li><a href="#">传智社区</a></li>
+        <li><a href="#">在线课堂</a></li>
+    </ul>
+</div>
+<div class="ban w flow">
+    <div id="bans">
+        <div class="banner left" id="banner">
+            <ul>
+                <li><img src="images/banner0.jpg" /> </li>
+                <li><img src="images/banner1.jpg" /> </li>
+                <li><img src="images/banner2.jpg" /> </li>
+                <li><img src="images/banner3.jpg" /> </li>
+                <li><img src="images/banner4.jpg" /> </li>
+                <li><img src="images/banner5.jpg" /> </li>
+                <li><img src="images/banner6.jpg" /> </li>
+                <li><img src="images/banner7.jpg" /> </li>
+            </ul>
+            <ol></ol>
+        </div>
+        <div id="arr"><span id="left">&lt;</span><span id="right">&gt;</span></div>
+    </div>
+    <script>
+        /**
+         * Created by Getzoo5 on 2017/8/28/028.
+         */
+        var bans = document.getElementById("bans");
+        var banner = bans.children[0];
+        var ul = banner.children[0];
+        var ol = banner.children[1];
+        var ulLis = ul.children;
+        var imgWidth = banner.offsetWidth;
+        var arr = document.getElementById("arr");
+        var left = document.getElementById("left");
+        var right = document.getElementById("right");
+        for (var i = 0; i < ulLis.length; i++) {
+            var li = document.createElement("li");
+            ol.appendChild(li);
+        }
+        var olLis = ol.children;
+        olLis[0].className = "current";
+        var firstImg = ulLis[0].cloneNode(true);
+        ul.appendChild(firstImg);
+        for (var j = 0; j < olLis.length; j++) {
+            olLis[j].index = j;
+            olLis[j].onmouseover = function () {
+                for (var k = 0; k < olLis.length; k++) {
+                    olLis[k].className = "";
+                }
+                this.className = "current";
+                var target = -this.index * imgWidth;
+                animate(ul, target);
+            };
+        }
+        bans.onmouseover = function () {
+            arr.style.display = "block";
+        };
+        bans.onmouseout = function () {
+            arr.style.display = "none";
+        };
+        var pic = 0;
+        var square = 0;
+        right.onclick = function () {
+            if (pic === ulLis.length - 1) {
+                ul.style.left = 0 + "px";
+                pic = 0;
+            }
+            pic++;
+            var target = -pic * imgWidth;
+            animate(ul, target);
+            if (square < olLis.length - 1) {
+                square++;
+            } else {
+                square = 0;
+            }
+            for (var i = 0; i < olLis.length; i++) {
+                olLis[i].className = "";
+            }
+            olLis[square].className = "current";
+        };
+        left.onclick = function () {
+            if (pic === 0) {
+                ul.style.left = -(ulLis.length - 1) * imgWidth + "px";
+                pic = ulLis.length - 1;
+            }
+            pic--;
+            var target = -pic * imgWidth;
+            animate(ul, target);
+            if (square > 0) {
+                square--;
+            } else {
+                square = olLis.length - 1;
+            }
+            for (var i = 0; i < olLis.length; i++) {
+                olLis[i].className = "";
+            }
+            olLis[square].className = "current";
+        };
+
+        setInterval(right.onclick, 3000);
+        function animate(obj, target) {
+            clearInterval(obj.timer);
+            obj.timer = setInterval(function () {
+                var leader = obj.offsetLeft;
+                var step = 30;
+                step = leader < target ? step : -step;
+                if (Math.abs(leader - target) >= Math.abs(step)) {
+                    leader = leader + step;
+                    obj.style.left = leader + "px";
+                } else {
+                    obj.style.left = target + "px";
+                    clearInterval(obj.timer);
+                }
+            }, 15);
+        }
+    </script>
+    <ul>
+        <li><a href="#">JavaEE培训 <span> > </span> </a></li>
+        <li><a href="#">Android培训 <span> > </span> </a></li>
+        <li><a href="#">PHP培训 <span> > </span> </a></li>
+        <li><a href="#">UI设计培训 <span> > </span> </a></li>
+        <li><a href="#">iOS培训 <span> > </span> </a></li>
+        <li><a href="#">前端与移动开发培训 <span> > </span> </a></li>
+        <li><a href="#">C/C++培训 <span> > </span> </a></li>
+        <li><a href="#">网络营销培训 <span> > </span> </a></li>
+        <li><a href="#">Python培训 <span> > </span> </a></li>
+        <li><a href="#">云计算之大数据培训 <span> > </span> </a></li>
+    </ul>
+
+    <div class="sidebar right">
+        <dl>
+            <dt>信息港</dt>
+            <dd><a href="#" title="2016年传智各学科学费价格表">2016年传智各学科学费价格表</a></dd>
+            <dd class="hot"><a href="#" title="轻松了解传智播客十大学科">轻松了解传智播客十大学科</a></dd>
+            <dd class="hot"><a href="#" title="这个暑假，足不出户拿万元高薪！">这个暑假，足不出户拿万元高薪！</a></dd>
+            <dd class="hot"><a href="#" title="暑期钜惠0元上课30天，火力开抢！">暑期钜惠0元上课30天，火力开抢！</a></dd>
+            <dd><a href="#" title="5个月，带你学透C/C++全栈开发">5个月，带你学透C/C++全栈开发</a></dd>
+            <dd><a href="#" title="紧随WWDC，iOS4.0课程震撼出炉">紧随WWDC，iOS4.0课程震撼出炉</a></dd>
+            <dd><a href="#" title="UI设计打造会代码的全能设计师">UI设计打造会代码的全能设计师</a></dd>
+            <dd><a href="#" title="PHP助你快速入门，就业冲击10k+">PHP助你快速入门，就业冲击10k+</a></dd>
+            <dd><a href="#" title="10月18日，前端学科入驻西安城">10月18日，前端学科入驻西安城</a></dd>
+        </dl>
+    </div>
+</div>
+
+<div class="pro w">
+    <div class="tit w">
+        <h2 class="left">学习资源</h2> <span class="right"><a href="#">公开课</a> | <a href="#">视频库</a> | <a
+            href="#">好毕设</a></span>
+    </div>
+    <ul>
+        <li>
+            <div><img src="images/pro01.jpg" alt=""/>
+                <b>2016年07月26日开课</b></div>
+            <h3 title="史上最最难就业季生存对策（全能UI设计师--代码篇）">史上最最难就业季生存对策（全能UI设计师--代码篇）</h3>
+
+            <p><span>已有277人报名</span>
+                <a href="#">立即报名</a></p>
+        </li>
+
+        <li>
+            <div><img src="images/pro02.jpg" alt=""/>
+                <b>2016年07月27日开课</b></div>
+            <h3 title="暑期在家，学点技术赚点钱吧？">暑期在家，学点技术赚点钱吧？</h3>
+
+            <p>
+                <span>已有235人报名</span>
+                <a href="#">立即报名</a>
+            </p>
+        </li>
+
+        <li>
+            <div><img src="images/pro03.jpg" alt=""/>
+                <b>2016年07月27日开课</b></div>
+            <h3 title="黑帽SEO泛目录批量优化网站排名">黑帽SEO泛目录批量优化网站排名</h3>
+
+            <p>
+                <span>已有263人报名</span>
+                <a href="#">立即报名</a>
+            </p>
+        </li>
+
+        <li>
+            <div><img src="images/pro04.jpg" alt=""/>
+                <b>2016年07月29日开课</b></div>
+            <h3 title="洞察Nginx高性能反向代理服务器">洞察Nginx高性能反向代理服务器</h3>
+
+            <p>
+                <span>已有242人报名</span>
+                <a href="#">立即报名</a>
+            </p>
+        </li>
+
+        <li class="ts">
+            <div><img src="images/pro05.jpg" alt=""/>
+                <b>2016年08月01日开课</b></div>
+            <h3 title="Android Wear开发尝鲜 - 两小时站在科技最前沿">Android Wear开发尝鲜 - 两小时站在科技最前沿</h3>
+
+            <p>
+                <span>已有96人报名</span>
+                <a href="#">立即报名</a>
+            </p>
+        </li>
+    </ul>
+</div>
+<div class="about w">
+    <div class="tit w">
+        <h2 class="left">传智故事</h2> <span class="right"><a href="#">学员故事</a> | <a href="#">科技喵喵喵</a></span>
+    </div>
+    <ul>
+        <li><img src="images/about01.jpg" alt=""/>
+
+            <h3><a href="#">小网管逆袭工资翻9倍</a></h3></li>
+        <li><img src="images/about02.jpg" alt=""/>
+
+            <h3><a href="#">高考结束，放弃大学，依然月薪过万！</a></h3></li>
+        <li><img src="images/about03.jpg" alt=""/>
+
+            <h3><a href="#">《对不起》系列微电影，史上最爆笑致歉——没有之一</a></h3></li>
+        <li class="ts"><img src="images/about04.jpg" alt=""/>
+
+            <h3><a href="#">不迷茫的毕业季，青春勇敢前行</a></h3></li>
+        <ul>
+</div>
+<div class="com w">
+    <div class="tit w">
+        <h2 class="left">社区本周精华</h2> <span class="right"><a href="#">开班报道</a> | <a href="#">学员故事</a> | <a
+            href="#">活动专区</a></span>
+    </div>
+    <ul>
+        <li><img src="images/com01.jpg" alt=""/>
+
+            <h3><a href="#">于是，我们来了！——北京传智JavaEE基础23</a></h3></li>
+        <li><img src="images/com02.jpg" alt=""/>
+
+            <h3><a href="#">大雨洗礼过的太阳会更加灿烂——传智JavaEE</a></h3></li>
+        <li><img src="images/com03.jpg" alt=""/>
+
+            <h3><a href="#">“暴雨前夕”北京传智播客UI设计基础63期开</a></h3></li>
+        <li class="ts"><img src="images/com04.jpg" alt=""/>
+
+            <h3><a href="#">在追求梦想的道路上我们风雨无阻！！</a></h3></li>
+    </ul>
+</div>
+
+<div class="case">
+    <div class="tit w">
+        <h2 class="left">传智播客课程中心</h2>
+    </div>
+    <div class="case-in w flow">
+        <div class="case-l left"></div>
+        <div class="case-r right">
+            <ul>
+                <li class="ts"></li>
+                <li class="ts"></li>
+                <li class="ts"></li>
+                <li class="ts"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="mune">
+    <div class="mune_in w">
+        <ul>
+            <li><a href="#" class="m1">免费分享视频教程</a></li>
+            <li><a href="#" class="m2">每年更新课程体系</a></li>
+            <li><a href="#" class="m3">定期举办技术沙龙</a></li>
+            <li><a href="#" class="m4">就业薪资全部公开</a></li>
+            <li class="ts"><a href="#" class="m5">7×24小时职业规划</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="footer">
+    <div>
+        <ul>
+            <li class="foot_h">关于我们</li>
+            <li><a href="#">传智简介</a></li>
+            <li><a href="#">加入传智</a></li>
+        </ul>
+        <ul>
+            <li class="foot_h">旗下品牌</li>
+            <li><a href="#">黑马程序员</a></li>
+            <li><a href="#">博学谷</a></li>
+        </ul>
+        <ul>
+            <li class="foot_h">校区攻略</li>
+            <li><a href="#">校区环境</a></li>
+            <li><a href="#">住宿攻略</a></li>
+            <li><a href="#">来校路线</a></li>
+        </ul>
+        <ul>
+            <li class="foot_h">学习资源</li>
+            <li><a href="#">视频库</a></li>
+            <li><a href="#">公开课</a></li>
+            <li><a href="#">云课堂</a></li>
+        </ul>
+        <ul>
+            <li class="foot_h">传智故事</li>
+            <li><a href="#">学员故事</a></li>
+            <li><a href="#">科技喵喵喵</a></li>
+        </ul>
+    </div>
+</div>
+<div class="frili w">
+    <h4>友情链接</h4>
+
+    <p><a href="#">黑马程序员</a>　<a href="#">博学谷</a>　<a href="#">首席营销官</a>　<a href="#">雅思</a>　<a href="#">ThinkPHP框架</a>　<a
+            href="#">ThinkPHP框架</a>　<a href="#">进销存软件</a>　<a href="#">在职研究生</a>　<a href="#">职称计算机考试</a>　<a href="#">武汉房产网</a>　<a
+            href="#">中国教育网</a>　<a href="#">视频教程网</a>　<a href="#">论文查重</a>　<a href="#">听课网</a>　<a href="#">PPT模板</a>　<a
+            href="#">求职信</a>　<a href="#">CCNA</a>　<a href="#">我爱IT技术网</a>　<a href="#">云计算</a>　<a href="#">标准下载</a>　<a
+            href="#">图片制作五笔输入法下载</a>　<a href="#">中国在职研究生网电脑主题</a>　<a href="#">123标志设计网</a>　<a href="#">新东方小语种</a>　<a
+            href="#">java1234培训师</a>　<a href="#">酷素材</a>　<a href="#">3d模型下载</a>　<a href="#">u盘启动盘制作工具</a>　<a href="#">申请传智播客友链</a>
+    </p>
+</div>
+<div class="copy_right w">
+    <p>传智播客版权所有 2006 - 2016 北京传智播客教育科技有限公司 地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 <br/>
+        电话：010-82935150/60/70 邮箱: zhanghj@itcast.cn 京ICP备08001421号 京公网安备110108007702
+    </p>
+</div>
+<!--<script type="javascript" src="js/banner.js"></script>-->
+</body>
+</html>

@@ -1,0 +1,699 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    margin: 0px;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    line-height: 160%;
+}
+
+table, tr, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, strong {
+    font-weight: 400;
+}
+
+a:link {
+    color: #999;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #999;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0099E5;
+    text-decoration: none;
+}
+
+a:active {
+    color: #6CF;
+    text-decoration: none;
+}
+
+div {
+    margin: 0 auto;
+}
+
+em, i {
+    font-style: normal;
+    font-size: 100%;
+}
+
+img {
+    border: none;
+}
+
+ul, li, ol {
+    list-style: none;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.flow {
+    overflow: hidden;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/*----全局样式-end*/
+
+.top {
+    background: #055C92;
+}
+
+.top_in {
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+}
+
+.top_in a {
+    color: #fff;
+}
+
+.top_in a:hover {
+    color: #f5f5f5;
+}
+
+/*top--样式-end*/
+
+.logo {
+    width: 232px;
+    height: 114px;
+    background: url(../images/logo.png) no-repeat left center;
+    overflow: hidden;
+}
+
+.logo a {
+    display: block;
+    height: 114px;
+}
+
+.logo h1 {
+    height: 114px;
+    text-indent: -315px;
+    overflow: hidden;
+    color: #fff;
+}
+
+/*logo--样式-end*/
+
+.nav ul {
+    width: 568px;
+    height: 114px;
+    float: left;
+}
+
+.nav ul li {
+    padding-right: 25px;
+    height: 114px;
+    line-height: 114px;
+    float: left;
+}
+
+.nav ul li a {
+    font-size: 16px;
+    color: #333;
+}
+
+.nav ul li a:hover {
+    font-size: 16px;
+    color: #0099E5;
+}
+
+/*nav--样式-end*/
+
+.ban {
+    position: relative;
+}
+
+.ban > ul {
+    width: 232px;
+    height: 360px;
+    background: rgba(20, 20, 20, .3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+}
+
+.ban > ul li {
+}
+
+.ban > ul li a {
+    font-size: 14px;
+    color: #fff;
+    display: block;
+    width: 194px;
+    height: 36px;
+    line-height: 36px;
+    padding-left: 38px;
+    /*background: url(../images/ban_nav.png) no-repeat right center;*/
+}
+.ban > ul li a span {
+    width: 30px;
+    height: 14px;
+    display: inline-block;
+    float: right;
+    text-align: left;
+    font-family: "宋体";
+}
+
+
+.ban > ul li a:hover {
+    color: #fff;
+    background-color: #3BA2F0;
+}
+
+.banner {
+    width: 958px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner ul {
+    width: 11958px;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -222;
+}
+
+.banner ul li {
+    width: 958px;
+    height: 400px;
+    float: left;
+    overflow: hidden;
+}
+
+.bans {
+    width: 958px;
+    height: 400px;
+    position: relative;
+}
+
+.banner ol {
+    width: 145px;
+    height: 14px;
+    padding: 3px 10px 3px 10px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    line-height: 20px;
+    background-color: rgba(0, 0, 0, .7);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.banner ol li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    background: #919090;
+    border: 2px solid #626262;
+    border-radius: 50%;
+    margin: 0 2px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.banner ol li.current {
+    background: #fff;
+}
+
+#arr {
+    display: none;
+}
+
+#arr span {
+    width: 45px;
+    height: 75px;
+    position: absolute;
+    left: 232px;
+    top: 50%;
+    margin-top: -40px;
+    background-color: rgba(0, 0, 0, .3);
+    cursor: pointer;
+    line-height: 75px;
+    text-align: center;
+    font-weight: bold;
+    font-family: '黑体';
+    font-size: 30px;
+    color: #fff;
+}
+
+#arr #left {
+    border-radius: 0 5px 5px 0;
+}
+
+#arr #right {
+    right: 242px;
+    left: auto;
+    border-radius: 5px 0 0 5px;
+}
+
+#arr #left:hover, #arr #right:hover {
+    background-color: rgba(0, 0, 0, .7);
+
+}
+
+/*banner--样式-end*/
+
+.sidebar {
+    overflow: hidden;
+}
+
+.sidebar dl {
+    width: 230px;
+    height: 398px;
+    border: 1px solid #E0E0E0;
+    overflow: hidden;
+}
+
+/*width: 232px; height: 400px;*/
+.sidebar dl dt {
+    height: 45px;
+    line-height: 45px;
+    background: #055C92;
+    font-size: 16px;
+    border-bottom: 1px solid #E0E0E0;
+    margin-bottom: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.sidebar dl dd {
+    height: 36px;
+    line-height: 36px;
+    font-size: 12px;
+    text-indent: 20px;
+    background: url(../images/s_bar.png) no-repeat left center;
+}
+
+.sidebar dl dd a {
+    color: #333;
+}
+
+.sidebar dl dd.hot a {
+    color: #f00;
+}
+
+.sidebar dl dd a:hover {
+    color: #0099E5;
+}
+
+.sidebar dl dd.hot a:hover {
+    color: #f00;
+}
+
+/*sidebar--样式-end*/
+
+.tit {
+    height: 70px;
+    overflow: hidden;
+}
+
+.tit h2 {
+    width: 250px;
+    height: 70px;
+    line-height: 96px;
+    font-size: 20px
+}
+
+.tit span {
+    display: block;
+    width: 240px;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 70px;
+    color: #ddd;
+}
+
+/*tit--样式-end*/
+
+.pro, .about, .com {
+    overflow: hidden;
+}
+
+.pro {
+    margin: 0 ；
+}
+
+.pro ul li {
+    width: 230px;
+    height: 193px;
+    float: left;
+    border: 1px solid #E0E0E0;
+    margin-right: 10px;
+}
+
+.pro ul li.ts {
+    margin-right: 0;
+}
+
+.pro ul li div {
+    width: 230px;
+    height: 120px;
+    overflow: hidden;
+    position: relative;
+}
+
+.pro ul li div img {
+    width: 230px;
+}
+
+.pro ul li b {
+    display: block;
+    width: 230px;
+    height: 20px;
+    line-height: 20px;
+    background: url(../images/banner_nav.png) repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+    text-indent: 10px;
+}
+
+.pro ul li h3, .about ul li h3, .com ul li h3 {
+    height: 44px;
+    line-height: 44px;
+    text-indent: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pro ul li:hover, .about ul li:hover, .com ul li:hover {
+    border-color: #0099E5;
+}
+
+.pro ul li p {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+}
+
+.pro ul li p span {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+}
+
+.pro ul li p a {
+    display: block;
+    width: 62px;
+    height: 30px;
+    line-height: 30px;
+    float: right;
+    background: url(../images/pro_bg.png) no-repeat center;
+    text-align: center;
+    color: #ED4300;
+}
+
+/*pro--样式-end*/
+
+.about ul li h3 a, .com ul li h3 a {
+    color: #000;
+}
+
+.about ul li h3 a:hover, .com ul li h3 a:hover {
+    color: #0099E5;
+}
+
+.about ul {
+    overflow: hidden;
+}
+
+.about ul li {
+    width: 290px;
+    height: 218px;
+    border: 1px solid #E0E0E0;
+    float: left;
+    margin-right: 10px;
+}
+
+.about ul li.ts {
+    margin-right: 0;
+    float: right;
+}
+
+.about ul li img {
+    width: 290px;
+    height: 163px;
+}
+
+.about ul li h3 {
+    text-align: center;
+    height: 57px;
+    line-height: 57px;
+}
+
+/*about--样式-end*/
+
+.com ul {
+    overflow: hidden;
+}
+
+.com ul li {
+    width: 290px;
+    height: 218px;
+    border: 1px solid #E0E0E0;
+    float: left;
+    margin-right: 10px;
+}
+
+.com ul li.ts {
+    margin-right: 0;
+    float: right;
+}
+
+.com ul li img {
+    width: 290px;
+    height: 163px;
+}
+
+.com ul li h3 {
+    text-align: center;
+    height: 57px;
+    line-height: 57px;
+}
+
+/*com--样式-end*/
+
+/*transition: all 0.3s;*/
+/*-moz-transition: all 0.3s;*/
+/*-webkit-transition: all 0.3s;*/
+/*-o-transition: all 0.3s;*/
+
+.case {
+    background-color: #F3F3F3;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+.case-l {
+    width: 232px;
+    height: 350px;
+    background: #3688FF;
+    margin: 0;
+}
+
+.case-r {
+    width: 968px;
+}
+
+.case-r li {
+    width: 232px;
+    height: 170px;
+    float: left;
+    margin-left: 10px;
+    background-color: #fff;
+}
+
+.case-r li.ts {
+    margin-bottom: 10px;
+}
+
+.case-r li:hover {
+    box-shadow: 0px 2px 10px 0px #ccc;
+}
+
+.mune a {
+    color: #000;
+}
+
+.footer a, .frili a {
+}
+
+.mune a:hover, .footer a:hover, .frili a:hover {
+    color: #0099E5;
+}
+
+.mune {
+    background: #F3F3F3;
+    margin-top: 40px;
+    font-size: 14px
+}
+
+.mune ul {
+    overflow: hidden;
+}
+
+.mune ul li {
+    width: 239px;
+    height: 33px;
+    line-height: 33px;
+    float: left;
+    border-right: 1px solid #E0E0E0;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.mune ul li.ts {
+    border-right: none;
+}
+
+.mune ul li a {
+    display: block;
+    width: 229px;
+    height: 33px;
+    text-align: center;
+    background: url(../images/mune_ico.png) no-repeat;
+    margin-left: 10px;
+    text-indent: 32px;
+}
+
+.mune a:hover {
+    background: url(../images/mune_ico.png) no-repeat;
+}
+
+.mune ul li a.mune ul li.ts {
+    border: none;
+}
+
+.mune ul li a.m1 {
+    background-position: 0 0;
+}
+
+.mune ul li a.m2 {
+    background-position: 0 -40px;
+}
+
+.mune ul li a.m3 {
+    background-position: 0 -80px;
+}
+
+.mune ul li a.m4 {
+    background-position: 0 -120px;
+}
+
+.mune ul li a.m5 {
+    background-position: 0 -160px;
+}
+
+.mune ul li a.m1:hover {
+    background-position: 0 -200px;
+}
+
+.mune ul li a.m2:hover {
+    background-position: 0 -240px;
+}
+
+.mune ul li a.m3:hover {
+    background-position: 0 -280px;
+}
+
+.mune ul li a.m4:hover {
+    background-position: 0 -320px;
+}
+
+.mune ul li a.m5:hover {
+    background-position: 0 -360px;
+}
+
+/*mune--样式-end*/
+
+.footer {
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.footer div {
+    width: 1200px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.footer div ul {
+    width: 170px;
+    float: left;
+}
+
+.footer div ul li {
+    text-align: left;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.footer div ul li.foot_h {
+    font-size: 14px;
+    height: 50px line-height : 30 px;
+}
+
+/*footer--样式-end*/
+
+.frili {
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 40px
+}
+
+.frili h4 {
+    line-height: 54px;
+    font-size: 14px;
+}
+
+.frili p {
+    line-height: 26px;
+    font-size: 12px;
+}
+
+/*frili--样式-end*/
+
+.copy_right {
+    line-height: 40px;
+    padding: 30px 0;
+}
+
+.copy_right p {
+    background: url(../images/logo_but.png) no-repeat left center;
+    line-height: 26px;
+    padding-left: 165px;
+}
+
+/*copy_right--样式-end*/

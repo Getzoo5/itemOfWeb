@@ -1,0 +1,474 @@
+﻿@charset "utf-8";
+body, ul, dl, dd, dt, ol, li, p, h1, h2, h3, h4, h5, h6, textarea, form, select, fieldset, table, td, div, input {
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: none
+}
+
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+ul, ol, li {
+    list-style-type: none;
+    vertical-align: 0
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    /*font-family: Microsoft YaHei;*/
+    /*font-family: "Roboto";*/
+    /*font-family: "Open Sans";*/
+
+    font-family: "fontello";
+}
+
+
+a {
+    outline-style: none;
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #DDB321;
+    text-decoration: none;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.w {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: left;
+}
+
+.flow {
+    overflow: hidden;
+}
+
+.nav {
+    width: 100%;
+    height: 40px;
+    background-color: #F2F2F2;
+    padding: 10px 0;
+}
+
+.nav ul {
+    float: left;
+}
+
+.nav ul li {
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    list-style: none;
+}
+
+.nav ul li a {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.nav ul li::after {
+    content: " /";
+}
+
+select {
+    width: 222px;
+    height: 39px;
+    line-height: 40px;
+    text-align: center;
+    margin-left: 30%;
+    padding: 0;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background-color: #F2F2F2;
+    border-bottom: 1px #666 solid;
+}
+
+option {
+    font-size: 8px;
+    height: 30px;
+    line-height: 160%;
+}
+
+.search {
+    width: 230px;
+    height: 40px;
+    float: right;
+}
+
+.search-txt ,.search button {
+    height: 30px;
+    margin: 5px auto;
+    outline: none;
+    border: 0;
+    vertical-align: top;
+}
+
+.search-txt {
+    width: 170px;
+    text-indent: 5px;
+}
+
+.search button {
+    width: 60px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.history {
+    height: 420px;
+    overflow: hidden;
+}
+
+.history section {
+    height: 420px;
+    position: relative;
+    float: left;
+}
+
+.history h6 {
+    color: #DDB321;
+    line-height: 200%;
+}
+
+.his-in {
+    width: 5000%;
+    position: relative;
+    /*margin-top: 100px;*/
+}
+
+.history .his-inner {
+    width: 270px;
+    text-align: left;
+    position: absolute;
+    left: 144px;
+    top: 80px;
+}
+
+.history section h6 {
+    font-size: 1.8rem;
+    margin-top: 50%;
+}
+
+.history section.a {
+    background: url(../img/ferruccio.png) no-repeat left bottom;
+}
+
+.history section.b {
+    height: 420px;
+    right: 0;
+    /*opacity: 0*/
+}
+
+.history section.a {
+    width: 758px;
+    height: 420px;
+    right: 0;
+}
+
+.history section.b div.big {
+    width: 436px;
+    height: 190px;
+    color: #eae6d5;
+    font-size: 180px;
+    font-weight: 900;
+    left: -32%;
+    position: absolute;
+    z-index: -1;
+}
+
+.history section.b .small {
+    width: 200px;
+    height: 50px;
+    color: #eae6d5;
+    font-size: 30px;
+    font-weight: 900;
+    left: 0;
+    position: relative;
+    z-index: -1;
+}
+
+.history section.b div.small div {
+    width: 100px;
+    left: -50%;
+    top: 318px;
+    position: absolute;
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 28px;
+    color: #DDB321;
+    z-index: 0;
+    cursor: pointer;
+    background-color: #fff;
+    margin-left: 50px;
+}
+
+/*中间年份轴*/
+
+div.history section.b div.tal{
+    text-align: left;!important;
+    margin-left: -60px;
+}
+
+div.history section.b div.tal div {
+    padding-left: 20px;
+}
+
+div.history section.b div.tar{
+    text-align: right;!important;
+    margin-left: 20px;
+}
+
+div.history section.b div.tar div {
+    padding-right: 20px;
+}
+
+div.history section.b div.tac{
+    text-align: center;!important;
+}
+
+/*中间年份轴*/
+
+.history section.a span {
+    display: inline-block;
+    padding: 8px 13px;
+    border-bottom: 1px solid #000;
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    right: 58%;
+}
+
+.history section.a span:hover {
+    color: #DFB400;
+    border-bottom: 1px solid #E3C689;
+    cursor: pointer;
+}
+
+.history p {
+    color: #E3C689;
+    position: relative;
+}
+
+.people {
+    position: relative;
+}
+
+/*people结束*/
+
+.con {
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+#con-in {
+    background: #000;
+    overflow: hidden;
+    position: relative;
+    width: 1130px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+#con_in2 {
+    width: 1130px;
+    height: 322px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#con_in2 li {
+    z-index: -1;
+    float: left;
+    width: 1128px;
+    height: 320px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#con_in3 {
+    width: 1200px;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+#con_in3 li {
+    display: block;
+    float: left;
+    cursor: pointer;
+    text-align: left;
+    margin-left: 1px;
+    width: 51px;
+    border-bottom: 1px solid #999;
+    height: 25px;
+    color: #ccc;
+}
+
+#con_inol {
+    cursor: pointer;
+    width: 1150px;
+    margin-left: 50px;
+}
+
+.con span {
+    width: 50px;
+    float: left;
+    height: 25px;
+}
+
+.con ol li:hover, .con ol li.current, .con span.current {
+    border-bottom: 1px solid #000;
+    color: #000;
+}
+
+.li-in {
+    width: 350px;
+    height: 160px;
+    margin: 70px auto;
+}
+
+.li-in img {
+    width: 350px;
+}
+
+.li-in p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    display: block;
+}
+
+.con-in2 ul li {
+}
+
+.in2inner,.in2inner1,.in2inner2 {
+    width: 350px;
+    height: 320px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.big-in2 .in2inner,.big-in2 .in2inner1,.big-in2 .in2inner2, .big-in3 .in2inner,.big-in3 .in2inner1,.big-in3 .in2inner2 {
+    float: left;
+}
+
+.big-in2 {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.big-in3 {
+    width: 1050px;
+    margin: 0 auto;
+}
+
+.bgover {
+    width: 250px;
+    height: 300px;
+    color: #fff;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 50px;
+    text-align: center;
+    background-color: #eae6d5;
+    /*display: none;*/
+    opacity: 0;
+}
+
+.bgover .bgo-tit strong {
+    font-size: 35px;
+    text-align: center;
+}
+
+.discover {
+    opacity: 0;
+}
+
+.discover a {
+    width: 68px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    margin: -50px auto 0;
+    text-align: center;
+    color: #fff;
+    background: #000 scroll 1px;
+    display: block;
+    z-index: 2;
+}
+
+/*轮播部分结束*/
+.btn-in{
+    width: 1000%;
+}
+#btn_l, #btn_r {
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 72px;
+    font-weight: 900;
+    font-size: 28px;
+    color: #DDB321;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: #ddb321;
+    top: 50%;
+    z-index: -3;
+}
+
+.dot {
+    position: relative;
+    width: 500px;
+    top: -10px;
+    left: 6px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    z-index: 4;
+}
+
+.dot svg circle {
+    margin: 5px auto;
+}
+/*btn ---- end*/
